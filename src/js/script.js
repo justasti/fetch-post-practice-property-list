@@ -22,7 +22,6 @@ fetch("https://radial-reinvented-shoe.glitch.me")
     });
     properties.innerHTML = newHTML;
     forSale = document.querySelectorAll(".property");
-    propertyCity = forSale[0].children[1].children[1].textContent;
   });
 
 cities.forEach((city) => {
