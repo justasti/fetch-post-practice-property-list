@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2>Add your propery for sale</h2>
+        <h4>Yes, you can sell where you live and get cash!!</h4>
+      </div>
+    </header>
+    <div class="container">
+      <p>Add Property</p>
+      <form>
+        <label for="img">Image</label>
+        <input
+          type="text"
+          name="img"
+          id="img"
+          placeholder="https://google.com/image.png"
+          required
+        />
+        <label for="price">Price, EUR</label>
+        <input
+          type="number"
+          name="price"
+          id="price"
+          placeholder="60000"
+          required
+        />
+        <label>Description</label>
+        <textarea
+          id="description"
+          placeholder="anything you would like to say?"
+          rows="5"
+          required
+        ></textarea>
+        <!-- id="description"
+          placeholder="anything you would like to say?"
+          required -->
+        <label>City</label>
+        <select id="city">
+          <option value="Vilnius">Vilnius</option>
+          <option value="Kaunas">Kaunas</option>
+          <option value="Klaipėda">Klaipėda</option>
+        </select>
+        <button type="submit" class="btn">Add property</button>
+        <p id="status">Succesfully added!</p>
+      </form>
+    </div>
+
+    <script src="./src/js/addproperty.js"></script>
+  </body>
+</html>

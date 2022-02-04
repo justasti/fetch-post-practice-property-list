@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      How to Get Value of Selected Option In Javascript - nicesnippets.com
+    </title>
+  </head>
+  <body>
+    <label>Select State :</label>
+    <select id="mySelect" onchange="myFunction();">
+      <option>Gujarat</option>
+      <option>Goa</option>
+      <option>Keral</option>
+    </select>
+
+    <script>
+      function myFunction() {
+        var result = document.getElementById("mySelect").value;
+        alert(result);
+      }
+    </script>
+  </body>
+</html>
