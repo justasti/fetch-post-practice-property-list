@@ -14,7 +14,10 @@ fetch("https://radial-reinvented-shoe.glitch.me")
     alt=""
     />
     <div class="prop-text">
-    <h1>${property.price / 1000}.000 €</h1>
+    <h1>${String(property.price).slice(
+      0,
+      String(property.price).length - 3
+    )}.${String(property.price).slice(String(property.price).length - 3)}€</h1>
     <h5>${property.city}</h5>
     <p>${property.description}</p>
     </div>
