@@ -68,6 +68,11 @@ button {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-content: center;
+}
+.add-property {
+  display: flex;
+  align-items: center;
 }
 .city {
   color: #333;
